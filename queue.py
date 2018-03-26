@@ -2,12 +2,13 @@
 #Stack is a FIFO type class
 
 class queue(object):
-    head = 0
-    tail = 0
+
 
     def __init__(self,n): #Initialising an instance of the class Queue
         self.queue = ['']*n  # n is the length of the queue
         self.n = n   #All entries except enqueue are empty ('')
+        self.head = 0
+        self.tail = 0
 
     def __repr__(self): #To represent the queue in readable format
         return '<stack({})>'.format(self.queue)
